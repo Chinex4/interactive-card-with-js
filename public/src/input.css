@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('fonts/Roboto-Regula.ttf');
+}
+.violet-background{
+    background-image: url('../images/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.desktop-violet-background{
+    background-image: url('../images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-front{
+    background-image: url('../images/bg-card-front.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-back{
+    background-image: url('../images/bg-card-back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* npx tailwindcss -i ./public/src/input.css -o ./public/output.css --watch */

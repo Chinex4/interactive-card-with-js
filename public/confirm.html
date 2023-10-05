@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive card details form | By Chinex</title>
+    <link rel="stylesheet" href="css/output.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="antialiased font-spaceGrotesk">
+    <div class="w-full min-h-screen flex flex-col md:flex-row">
+        <!-- Card bg-->
+        <div
+            class="relative violet-background 
+            md:desktop-violet-background w-full h-[250px] 
+            md:min-h-screen md:flex-auto md:w-[45%] 
+            bg-violet-800">
+            <!-- Card front -->
+            <div
+                class="card-front absolute p-4 flex flex-col 
+                justify-between left-4 top-32 md:top-36 md:left-52 
+                z-20 w-[300px] h-[170px] shadow-xl rounded-lg">
+                <!-- Card Logo -->
+                <div>
+                    <img src="images/card-logo.svg" alt="" class="w-10">
+                </div>
+                <!-- Card details -->
+                <div class="space-y-4">
+                    <p 
+                    id="card-number"
+                    class="w-full text-lightGrayishViolet 
+                    tracking-widest">0000 0000 0000 0000 0000</p>
+                    <div 
+                    class="flex justify-between tracking-widest 
+                    text-lightGrayishViolet text-sm">
+                        <p id="card-name" class="uppercase">jane appleseed</p>
+                        <p><span id="card-month">00</span>/<span id="card-year">00</span> </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card back  -->
+            <div
+                class="card-back absolute top-8 left-[55px] 
+                md:top-[350px] md:left-64 p-4 z-10 w-[300px] 
+                h-[150px] shadow-md md:shadow-xl rounded-lg">
+                <p 
+                id="cvc"
+                class="absolute top-[62px] right-10 text-lightGrayishViolet 
+                tracking-widest">000</p>
+            </div>
+        </div>
+        <!-- Card Confirmation -->
+        <div 
+        class="w-full pt-20 md:pt-6 pb-6 px-6 
+        bg-white md:flex-auto md:grid md:place-items-center">
+            <div class="w-full md:w-[400px] space-y-8 grid place-items-center">
+                <div>
+                    <img src="/public/images/icon-complete.svg" alt="">
+                </div>
+                <div class="space-y-5 text-center">
+                    <p class="text-3xl text-verydarkGrayishViolet tracking-widest uppercase font-medium">Thank you!</p>
+                    <p class="text-darkGrayishViolet tracking-widest">We've added your card details</p>
+                </div>
+                <a 
+                    id="continue-button"
+                    class="text-center rounded-xl py-3 block w-full bg-verydarkGrayishViolet text-white"
+                    href="./index.html">Continue</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
